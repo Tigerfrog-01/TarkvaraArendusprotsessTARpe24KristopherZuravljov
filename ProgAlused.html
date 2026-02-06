@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmeerimise Alused - C# Ülesanded</title>
+    <link rel="stylesheet" href="progstyle.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <header class="page-header">
+            <div class="cs-logo">C#</div>
+            <h1>Programmeerimise Alused</h1>
+            <p>Vali ülesanne, et näha koodi või käivitada see veebis.</p>
+        </header>
+
+        <section class="task-grid">
+            <a href="#" onclick="showOptions('ProgTask1.cs')" class="task-card">ProgTask1.cs</a>
+            <a href="#" onclick="showOptions('ProgTask2.cs')" class="task-card">ProgTask2.cs</a>
+            <a href="#" onclick="showOptions('ProgTask3.cs')" class="task-card">ProgTask3.cs</a>
+            <a href="#" onclick="showOptions('ProgTask4.cs')" class="task-card">ProgTask4.cs</a>
+            <a href="#" onclick="showOptions('ProgTask5.cs')" class="task-card">ProgTask5.cs</a>
+            <a href="#" onclick="showOptions('ProgTask6.cs')" class="task-card">ProgTask6.cs</a>
+            <a href="#" onclick="showOptions('ProgTask7.cs')" class="task-card">ProgTask7.cs</a>
+            <a href="#" onclick="showOptions('ProgTask8.cs')" class="task-card">ProgTask8.cs</a>
+            <a href="#" onclick="showOptions('ProgTask9.cs')" class="task-card">ProgTask9.cs</a>
+            <a href="#" onclick="showOptions('ProgTask10.cs')" class="task-card">ProgTask10.cs</a>
+            <a href="#" onclick="showOptions('ProgTask11.cs')" class="task-card">ProgTask11.cs</a>
+            <a href="#" onclick="showOptions('ProgTask12.cs')" class="task-card">ProgTask12.cs</a>
+            <a href="#" onclick="showOptions('ProgTask13.cs')" class="task-card">ProgTask13.cs</a>
+            <a href="#" onclick="showOptions('ProgTask14.cs')" class="task-card">ProgTask14.cs</a>
+        </section>
+
+        <footer class="page-footer">
+            <nav class="sub-nav">
+                <a href="index.html">← Tagasi Portfooliosse</a>
+                <a href="mainpage.html">Minu info</a>
+            </nav>
+        </footer>
+    </div>
+
+    <div id="choiceModal" class="modal">
+        <div class="modal-content">
+            <h3>Kuidas soovid jätkata?</h3>
+            <p id="selectedTaskName"></p>
+            <div class="modal-buttons">
+                <a id="viewCodeBtn" href="#" class="modal-btn">Vaata koodi</a>
+                <a href="https://dotnetfiddle.net/" target="_blank" class="modal-btn fiddle-btn">Et käivitada koodi, vaata koodi, tule tagasi, ja kliki mind</a>
+                <button onclick="closeModal()" class="modal-btn close-btn">Tühista</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showOptions(fileName) {
+            const modal = document.getElementById('choiceModal');
+            const taskText = document.getElementById('selectedTaskName');
+            const viewBtn = document.getElementById('viewCodeBtn');
+
+            taskText.innerText = "Valitud: " + fileName;
+            // This directs to your CodeViewer page we built earlier
+            viewBtn.href = "CodeViewer.html?file=" + fileName;
+            
+            modal.style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById('choiceModal').style.display = "none";
+        }
+
+        // Close modal if user clicks outside of it
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('choiceModal')) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+</html>

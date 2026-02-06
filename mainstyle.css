@@ -1,0 +1,63 @@
+/* ======= Minimalist Setup ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff; /* Pure white background */
+    color: #1f3a5f;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    width: 90%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1f3a5f;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.personal-details {
+    margin: 50px 0;
+    font-size: 1.2rem;
+    color: #666;
+    flex-grow: 1; /* Pushes the nav to the bottom */
+}
+
+/* ======= Bottom Navigation ======= */
+.bottom-nav {
+    margin-top: auto; /* Ensures it stays at the bottom */
+    padding: 40px 0;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #1f3a5f;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid #1f3a5f;
+    border-radius: 30px; /* Pill shape */
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #1f3a5f;
+    color: white;
+    box-shadow: 0 4px 15px rgba(31, 58, 95, 0.3);
+}
