@@ -1,4 +1,7 @@
-﻿namespace ProgTask6
+﻿
+using System;
+
+namespace ProgTask6
 {
     internal class Program
     {
@@ -136,7 +139,7 @@ public class Circle
     {
 
         _radius = 10;
-        _diameter = 5;
+        _diameter = 20;
 
     }
 

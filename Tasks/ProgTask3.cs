@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
-using System.Reflection.PortableExecutable;
-using System.Runtime.ConstrainedExecution;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
 namespace ProgTask3
 {

@@ -1,9 +1,5 @@
-﻿using System.ComponentModel.Design;
-using System.IO;
-using System.Net;
-using System.Net.WebSockets;
-using System.Security.Cryptography.X509Certificates;
-using static System.Net.Mime.MediaTypeNames;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
