@@ -1,100 +1,105 @@
 <!DOCTYPE html>
-<html language ="et">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, intital-scale=1.0">
-        <title>Waterfall ehk kosemudel</title>
-    </head>
-    <body>
-        <a href="../index.html">Tagasi</a><br><br>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfall ehk kosemudel</title>
+    <link rel="stylesheet" href="sdlcmodels.css">
+</head>
+<body>
 
-        <p>
-            Kosemudel(ehk waterfall) on üks esimesi tarkvaraarenduse elutsükli mudeleid. Ta põhineb tavalise tootmis<br>
-            protsessi eeskujul. kus iga etapp eelneb järgmisele. Tagasipöördumine eelmisesse etappi on keeruline nong kui <br>
-            eelnevas etapis avastakse viga, tähendab see seda,et vea juurde saab tagasi tulla alles, siis kui tarkvara<br>
-            on kastusse läinud<br>
-        </p>
-        <h2>Kosemudeli etapid:</h2>
-        <p>
-            Kosemudel koosneb viiest etapist, mis rahuldab kõiki üldise tarkvaraarenduse elutsükli etappe<br>
-            Nendeks on Nõuete määratlemine, Süsteemi ja tarkvara kavandamine, Teostus ning moodulite testimine, Integratsioon ja <br>
-            süsteemi testimine ning Kasutamine ja hooldus<br>
-        </p><br>
-        <h3>1. Etapp Nõuete määratlemine</h3><br>
-        <p>
-            Siin etapis dokumenteeritakse arendatava toote või süsteemi nõuded, käitumine, sihtriistvara jms. Vahet jaotakse<br>
-            see etapp kaheks - Süsteemi analüüs ja nõuete analüüs<br>
-        </p><br>
-        <h3>2. Etapp Nõuete Määratlemine</h3>
-        <p>
-            Teises etapis kavandatakse arendusele mineva tarkvaratoote süsteem ja struktuur, keskendudes selle funktsioonalsete<br>
-            omadustele. Need võivad olla erinevad andmestruktuurid, toote enda arhiektuur, erinevad liidsesed nende liidsete omadused<br>
-            ja muud algortimilised detailid. Kavandamise tulemused dokumenteeritakse, ning mille järgi hiljem teostuse hinnatakse<br>
-            projekti kvaliteeti - Mida rohkem on kavandist tehtud, seda rohkem on projektist valminud<br>
-        </p><br>
-        <h3>3. Etapp - teostus ning moodulite testimine</h3><br>
-        <p>
-            Eelnevalt valminud kavandi järgi toimib siin etapis toote arenuds. Arendustöö käigus arendatakse programm moodulhaaval<br>
-            või moodulite kogumikuna. Peale arendustööd testitakse valmisaadud mooduleid ja moodulkogumikkui. Olenevalt eelnevalt<br>
-            dokumneteeritud kavandi detailsusest tuleneb nüüd selles etapis projekti arenduslihtsus. Mida rohkem on detaile kavandatud,<br>
-            seda lihtsam ona arendustöö<br>
-        </p><br>
-        <h3>4. Etapp Intergratsioon ja süsteemi testimine</h3>
-        <p>
-            Toimub nagu valmissaadud tarkvarasüsteemi testimine. Peale testimist tarnitakse toode kliendile ja/või sihtrühmale<br>
-            Testitakse sellest vaatepunktist, kas süsteem teeb seda mis eelenvalt dokumneteeritud ning testitakse ka , et süsteemis olevad<br>
-            erinevad detailid on loogilised<br>
-        </p><br>
-        <h3>5. Etapp - Kasutamine ja hooldus</h3><br/>
-        <p>
-            Tegu on kõige pikema tarkvara elutsüklis oleva etapiga. Siin toimub vigade parandus, funktsionaalsuse muutmine (kas<br/>
-            siis kliendi, turu, keskkonna või sihtrühma sisendi tagajärjel või vajadusel) ja koodi enda refaktoreerimine.<br/>
-            Arendustöö teostamiseks korratakse kõiki eelmisi etappe, kuid siis ainult süsteemi muutmise tarbeks, mitte ainult nullist <br>
-            Millegi uue arenduse jaoks <br>
-        </p>
-        <h2>Arendusmudeli joonis</h2>
-        <img src="../Piltid/waterfall.PNG">
-        <h2>Arendusmudeli head ja vead</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Head küljed</th>
-                    <th>Halvad küljed</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Nõuded on projektis alguses selgelt paigas</td>
-                    <td>Nõudeid ei saa muuta projekti käigus</td>
-                </tr>
-                <tr>
-                    <td>Valminud toode on 1:1 nõuetele vastav</td>
-                    <td>Arendusmudel ei ole paindlik muudatuste tagamiseks</td>
-                </tr>
-                <tr>
-                    <td>Kuidas hindamine on lihtne kuna planeerimata ootamusi <br> tekib vähem, sest nõuded on paigas</td>
-                    <td>Nõuete paikapanek on keeruline, kuna rendustööd ei alustata<br>enne, kui kõik nõuded on detailsed pagias,<br>
-                    absoluutselt kogu projekti kohta</td>
-                    
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table><br><br>
-        <h2>Kasutusala</h2><br>
-        <p>
-            Kosemudel sobib kõige paremini suurtele süsteemidele kui seda arendatakse mitmes kohas korraga. Korralik eelnev planeerimine<br>
-            Aitab eri paikades asuvaid meeskondi paremini kordineerida
-        </p>
-        <h2>ALLIKAD</h2>
-        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html">EUCIP</a>
-        
+    <nav class="top-nav">
+        <a href="../index.html" class="back-link">← Tagasi portfooliosse</a>
+    </nav>
 
+    <main class="content-container">
+        <header class="model-header">
+            <h1>Waterfall ehk kosemudel</h1>
+            <div class="subtitle">Klassikaline ja lineaarne tarkvaraarenduse protsess</div>
+        </header>
 
+        <section class="intro-text">
+            <p>
+                Kosemudel (Waterfall) on üks esimesi tarkvaraarenduse elutsükli mudeleid. See põhineb tavalise tootmisprotsessi 
+                eeskujul, kus iga etapp eelneb järgmisele. Tagasipöördumine eelmisesse etappi on keeruline ning kui eelnevas 
+                etapis avastatakse viga, saab selle juurde naasta tavaliselt alles siis, kui tarkvara on kasutusse läinud.
+            </p>
+        </section>
 
+        <section class="steps">
+            <h2>Kosemudeli etapid</h2>
+            
+            <div class="step-card">
+                <h3>1. Nõuete määratlemine</h3>
+                <p>Dokumenteeritakse toote nõuded, käitumine ja sihtriistvara. See etapp jaguneb süsteemi analüüsiks ja nõuete analüüsiks.</p>
+            </div>
 
+            <div class="step-card">
+                <h3>2. Süsteemi ja tarkvara kavandamine</h3>
+                <p>Keskendutakse struktuurile: andmestruktuurid, tarkvara arhitektuur ja liidesed. See on aluseks hilisemale kvaliteedi hindamisele.</p>
+            </div>
 
-    </body>
+            <div class="step-card">
+                <h3>3. Teostus ning moodulite testimine</h3>
+                <p>Toimub reaalne arendustöö moodulhaaval. Mida detailsem oli eelnev kavand, seda lihtsam ja kiirem on selles etapis arendus.</p>
+            </div>
+
+            <div class="step-card">
+                <h3>4. Integratsioon ja süsteemi testimine</h3>
+                <p>Moodulid liidetakse tervikuks ja kontrollitakse, kas süsteem vastab dokumenteeritud nõuetele ja on loogiline.</p>
+            </div>
+
+            <div class="step-card">
+                <h3>5. Kasutamine ja hooldus</h3>
+                <p>Kõige pikem etapp, kus toimub vigade parandus, refaktoreerimine ja vajadusel funktsionaalsuse muutmine vastavalt tagasisidele.</p>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <h2>Arendusmudeli head ja vead</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Head küljed</th>
+                        <th>Halvad küljed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nõuded on projekti alguses selgelt paigas.</td>
+                        <td>Nõudeid on projekti käigus väga raske muuta.</td>
+                    </tr>
+                    <tr>
+                        <td>Valminud toode vastab 1:1 algsetele nõuetele.</td>
+                        <td>Mudel ei ole paindlik ootamatute muudatuste suhtes.</td>
+                    </tr>
+                    <tr>
+                        <td>Hindamine on lihtne, kuna ootamatusi tekib vähem.</td>
+                        <td>Arendustööd ei saa alustada enne täielikku planeerimist.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="visuals">
+            <h2>Arendusmudeli joonis</h2>
+            <div class="image-wrapper">
+                <img src="../Piltid/waterfall.PNG" alt="Waterfall mudeli joonis">
+            </div>
+        </section>
+
+        <section class="use-case intro-text">
+            <h2>Kasutusala</h2>
+            <p>
+                Kosemudel sobib kõige paremini suurtele süsteemidele, mida arendatakse mitmes asukohas korraga. 
+                Põhjalik eelnev planeerimine aitab eri paikades asuvate meeskondade tööd paremini koordineerida.
+            </p>
+        </section>
+    </main>
+
+    <footer class="source-footer">
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html" target="_blank">Allikas: EUCIP - Kosemudel</a>
+    </footer>
+
+</body>
 </html>

@@ -1,0 +1,125 @@
+/* Reset & base - Matching your SDLC style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #f4f6f8; /* The light grey you use */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Nav & Header */
+.top-nav {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #1f3a5f;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Container for consistency */
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Headers matching your palette */
+h1 {
+    text-align: center;
+    color: #1f3a5f;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1f3a5f;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e6f0ff;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #2a4b6b;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* The "Card" style from your lists applied to sections */
+.intro-text, .step-card, .def-item {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Steps - Vertical list style */
+.step-card h3 {
+    margin-top: 0;
+    color: #1f3a5f;
+}
+
+/* Tables matching your SDLC style */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #e6f0ff;
+    color: #1f3a5f;
+}
+
+/* Image handling */
+.image-wrapper {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin: 25px 0;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.source-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+.source-footer a {
+    color: #1f3a5f;
+    text-decoration: none;
+}
