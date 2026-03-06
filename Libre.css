@@ -1,0 +1,30 @@
+
+.navbar {
+    display: flex;           
+    justify-content: center;  
+    gap: 30px;             
+    background-color: #f4f4f4; 
+    padding: 20px;           
+    border-radius: 8px;     
+}
+
+
+.navbar a {
+    text-decoration: none;  
+    color: #333;             
+    font-weight: bold;      
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar a:hover {
+    color: #ff4500;         
+}
+div img {
+    max-width: 100%;    
+    height: auto;      
+    display: block;      
+    margin: 20px auto;   
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); 
+}
