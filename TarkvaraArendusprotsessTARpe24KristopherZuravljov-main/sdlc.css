@@ -1,0 +1,107 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for content */
+body > h1:first-of-type {
+    text-align: center;
+    color: #1f3a5f;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: left;
+    color: #1f3a5f;  /* optional color to match your palette */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #1f3a5f;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #2a4b6b;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: white;
+    margin-bottom: 8px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1f3a5f;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e6f0ff;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Section cards (optional) */
+body > h1, h2, h3, p, ul, table {
+    padding: 0 10px;
+}
+
+/* Paragraph with line breaks - remove excessive <br> spacing */
+br {
+    line-height: 1.4;
+}
+
+/* Links */
+a {
+    color: #1f3a5f;
+}

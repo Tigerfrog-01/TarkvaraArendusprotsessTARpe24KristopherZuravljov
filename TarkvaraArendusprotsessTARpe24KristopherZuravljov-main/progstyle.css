@@ -1,0 +1,50 @@
+.navbar {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px; /* Adjust this to make the columns wider or narrower */
+    margin-top: 20px;
+}
+
+.navbar a {
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+    color: #1f3a5f;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #1f3a5f;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: #1f3a5f;
+    color: white;
+
+}
+button
+{
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px; /* Adjust this to make the columns wider or narrower */
+    margin-top: 20px;
+}
+button a
+{
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+    color: #1f3a5f;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #1f3a5f;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+button a:hover
+{
+    background-color: #1f3a5f;
+    color: white;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkrementaalne arendusmudel</title>
+    <link rel="stylesheet" href="sdlcmodels.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-inner">
+            <a href="../index.html" class="back-link">← Tagasi portfooliosse</a>
+            <span class="nav-tag">SDLC Dokumentatsioon</span>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Inkrementaalne arendusmudel</h1>
+            <p class="subtitle">Paindlik lahendus kosemudeli jäikusele</p>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <section class="intro-card">
+            <p>
+                Inkrementaalne arendusmudel on üks viis, kuidas lahendada kosemudeli jäika tsüklit. See aitab arendusmeeskonnal 
+                toime tulla muudatustega, mis tulenevad äritegevusest, kliendi soovidest või turu olukorrast. 
+                Erinevalt <a href="waterfall.html">kosemudelist</a> ei tugine see täielikult valmiskirjeldatud kavandile. Selles mudelis saab arendada 
+                erinevaid programmi osi samaaegselt, kuvades kliendile <strong>MVP (Minimum Viable Product)</strong> 
+                osasid enne täielikku valmimist.
+            </p>
+        </section>
+
+        
+
+        <section class="steps-grid">
+            <h2 class="section-title">Tegevuste käik</h2>
+            <div class="step-card">
+                <div class="step-num">01</div>
+                <h3>Nõuete kirjeldus</h3>
+                <p>Kirjeldatakse üldjoontes toote funktsionaalsus ja jaotatakse nõuded prioriteedi järgi.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-num">02</div>
+                <h3>Süsteemi arendus</h3>
+                <p>Toimub reaalne koodikirjutamine. Iga inkrementi võib arendada kasutades erinevaid mudeleid.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-num">03</div>
+                <h3>Nõuete täiendus</h3>
+                <p>Kuni osa pole "külmutatud", on nõudeid võimalik muuta jooksvalt.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-num">04</div>
+                <h3>Tarne ja Integratsioon</h3>
+                <p>Valminud osa tarnitakse koheselt kliendile ja liidetakse süsteemiga.</p>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <h2 class="section-title">Head ja vead</h2>
+            <div class="table-wrapper">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th><span class="pro-tag">✔</span> Head küljed</th>
+                            <th><span class="con-tag">✖</span> Halvad küljed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Klient saab toodet varakult katsetada.</td>
+                            <td>Progressi jälgimine on keerukas.</td>
+                        </tr>
+                        <tr>
+                            <td>Inkrementides saab kasutada eri mudeleid.</td>
+                            <td>Struktuur võib muutuda "spagetiks".</td>
+                        </tr>
+                        <tr>
+                            <td>Muudatuste sisseviimine on odavam.</td>
+                            <td>Vajab pidevat refaktoreerimist.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="visuals">
+            <h2 class="section-title">Protsessi joonis</h2>
+            <div class="image-wrapper">
+                <img src="../Piltid/inkrementaalne.PNG" alt="Inkrementaalne mudel">
+            </div>
+        </section>
+
+        <section class="definitions">
+            <h2 class="section-title">Inkrementaalne vs Iteratiivne</h2>
+            <div class="def-box">
+                <div class="def-item">
+                    <h3>Inkrementaalne</h3>
+                    <p>Lisatakse <strong>uusi funktsioone</strong> (nagu majale korruste ehitamine).</p>
+                </div>
+                <div class="def-item">
+                    <h3>Iteratiivne</h3>
+                    <p>Olemasoleva osa <strong>täiustamine</strong> (nagu eskiisi muutmine maaliks).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="source-footer">
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html" target="_blank">Allikas: EUCIP Arhiiv</a>
+    </footer>
+
+</body>
+</html>
