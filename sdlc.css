@@ -1,107 +1,101 @@
-/* Reset & base */
+/* 1. Global Reset & Base Styles */
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 40px;
+    padding: 0; /* Let the container handle padding */
     background-color: #f4f6f8;
     color: #333;
     line-height: 1.6;
 }
 
-/* Container for content */
-body > h1:first-of-type {
+/* 2. Layout Container - Centers content and prevents edge-to-edge text */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 3. Typography */
+h1 {
     text-align: center;
     color: #1f3a5f;
     margin-bottom: 30px;
 }
 
-h1 {
-    text-align: left;
-    color: #1f3a5f;  /* optional color to match your palette */
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-h2 {
-    color: #1f3a5f;
-    margin-top: 35px;
-    margin-bottom: 15px;
-}
-
 h3 {
     color: #2a4b6b;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2a4b6b;
+    padding-left: 15px;
 }
 
-/* Paragraphs */
-p {
-    margin-bottom: 20px;
+/* 4. Image Handling - Stops images from being too big */
+img {
+    max-width: 100%; /* Shrinks image if it's wider than the screen */
+    height: auto;
+    display: block;
+    margin: 30px auto; /* Centers the image */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Lists */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
+/* 5. List Styling - Fixes the "Giant White Box" and Edge alignment */
+li {
     background: white;
-    margin-bottom: 8px;
-    padding: 12px 16px;
-    border-radius: 6px;
+    margin: 10px 0 10px 40px; /* Moves them away from the left edge */
+    padding: 10px 20px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    list-style-type: disc;    /* Keeps the bullet point */
+    width: fit-content;       /* Makes the box only as wide as the word */
+    min-width: 180px;         /* Ensures a nice consistent shape */
 }
 
-ul li a {
-    text-decoration: none;
-    color: #1f3a5f;
-    font-weight: bold;
+/* Removes extra gaps inside list items caused by <p> tags */
+li p {
+    margin: 0;
+    display: inline;
 }
 
-ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Tables */
+/* 6. Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
-    margin-bottom: 25px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin: 25px 0;
+    border-radius: 8px;
+    overflow: hidden; /* Rounds the table corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 th, td {
-    padding: 12px 15px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
     text-align: left;
 }
 
 th {
     background-color: #e6f0ff;
-}
-
-tr:last-child td {
-    border-bottom: none;
-}
-
-/* Section cards (optional) */
-body > h1, h2, h3, p, ul, table {
-    padding: 0 10px;
-}
-
-/* Paragraph with line breaks - remove excessive <br> spacing */
-br {
-    line-height: 1.4;
-}
-
-/* Links */
-a {
     color: #1f3a5f;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f9fbff; /* Subtle hover effect for rows */
+}
+
+/* 7. Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
