@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="sdlcmodels.css">
+<div class="content-container" id="erd">
+    <h2>ERD (Entity-Relationship Diagram)</h2>
+
+    <div class="intro-text">
+        <p><strong>ERD</strong> ehk olemite-suhete diagramm on andmebaasi struktuuri visuaalne mudel. See kirjeldab andmebaasi salvestatavaid objekte (olemeid) ja nendevahelisi seoseid.</p>
+    </div>
+
+    <h3>Ühenduselemendid (Kardiinaalsus)</h3>
+    <p>Ühendused näitavad, mitu ühe olemi kirjet on seotud teise olemi kirjetega.</p>
+    <div class="image-wrapper">
+        <img src="piltid/ERD.png">
+    </div>
+
+    <h3>Olimitabeli sisu</h3>
+    <div class="def-item">
+        <p>Olimitabel (Entity) tähistab andmebaasi tabelit. Selles peavad olema:</p>
+        <ul>
+            <li><strong>Tabeli nimi:</strong> Tavaliselt ainsuses olev nimisõna.</li>
+            <li><strong>Atribuudid:</strong> Tabeli veerud (andmeväljad).</li>
+            <li><strong>Võtmed:</strong> Identifikaatorid seoste loomiseks.</li>
+        </ul>
+    </div>
+
+    <h3>Võtmete seletus</h3>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Võtme tüüp</th>
+                <th>Kirjeldus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Primary Key (PK)</strong></td>
+                <td>Primaarvõti - unikaalne tunnus (nt ID), mis identifitseerib kirje.</td>
+            </tr>
+            <tr>
+                <td><strong>Foreign Key (FK)</strong></td>
+                <td>Välisvõti - veerg, mis viitab teise tabeli primaarvõtmele, luues seose.</td>
+            </tr>
+            <tr>
+                <td><strong>Composite Key</strong></td>
+                <td>Liitvõti - kahe või enama veeru kombinatsioon, mis moodustab unikaalse võtme.</td>
+            </tr>
+            <tr>
+                <td><strong>Key</strong></td>
+                <td>Üldine mõiste atribuudile, mida kasutatakse andmete otsimiseks.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="source-footer">
+        Infoallikad: <a href="https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/" target="_blank">Visual Paradigm ERD Guide</a>
+    </div>
+</div>
