@@ -4,118 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sdlc.css">
-    <title>Agiilsed arendusmeetodika</title>
+    <title>Agiilsed arendusmetoodikad</title>
 </head>
 <body>
     <div class="container">
+        <h1>Agiilsed arendusmetoodikad</h1>
 
-        <h1>Mis on agiilsed arendusmeetodika?</h1>
-        <p>
-           Agiilne meetod on viis läheneda projektijuhtimisele mis lõpp saatuseks on sujuv ja effektiivne meeskonna töö<br>
-           ja projekti lõpp saatus. See on tugiks ettearvamatuse reageerimisele mis tavaliselt tarkvaras tuleb kaasa.
-           Selle meetodiks kasutakse sprinti ja scrumi, milles kasutakse iteratiivseid tööjärjestusi(sprint).
-    
-        </p>
-        
-        <h3>Agiilse arendusala alustalad ja printsiipid</h3>
-        <p>
-             <b>Neli tähtsamad alustala agiilse arendsalas on:</b><br>
+        <nav>
+            <h2>Indeks</h2>
+            <ul>
+                <li><a href="#mis-on">Mis on Agiilsed arendusmetoodikad?</a></li>
+                <li><a href="#alustalad">4 alustala ja 12 printsiipi koos näidetega</a></li>
+                <li><a href="#kasutus">Kuna saab ja kuna ei saa kasutada?</a></li>
+                <li><a href="#scrum">SCRUM arendusmetoodika täielik kirjeldus</a></li>
+                <li><a href="#viited">Kasutatud allikad</a></li>
+            </ul>
+        </nav>
 
-            <b>Isikud ja suhtlus </b>- ilma suhtlusega, ei toimi mingi protsess<br>
-            <b>Töötav tarkvara</b> - klienti rahuoluks, peaks olema töötav tarkvara kätte saadav nii kiiresti kui võimalik,
-            klienti usaldust võidab ainult siis kui iga nädala tagant saab tarkvara mis on uuendatud, mitte pikka kavandit<br>
-            <b>Koostöö kliendiga</b> - kliendi soovid on tugi projektile, kui klient ei ole rahul , ei ole tuleviku<br>
-            <b>Reageerimine muutusele</b> - kui klient järsku tahab kassi asemele kalapulka, siis tiim peab aktsepteerima <br>
-            muutustele isegi kui see on vaimselt valus<br><br>
+        <hr>
 
-            <b>10 tähtsad printsiip mis võiks teada</b>
-            <li>1. Klienti rahuolu</li>
-            <li>2. Meeskonna töö</li>
-            <li>3. Aktspeerida muutustega</li>
-            <li>4. Motiveeritud meeskoond</li>
-            <li>5. Vestlused näost näkku</li>
-           <li>6. Töötav tarkvara</li> 
-           <li>7. Jätkusuutlik arendus</li> 
-            <li>8. Lihtsus</li>
-           <li>9. iseorganiseeritud meeskond</li> 
-           <li>10. Ruumi arengusele</li> <br><br>
+        <section id="mis-on">
+            <h2>Mis on Agiilsed arendusmetoodikad?</h2>
+            <p>
+                Agiilne arendus on iteratiivne lähenemine tarkvaratootmisele ja projektijuhtimisele. Selle põhieesmärk on tarnida kliendile väärtust kiiremini ja väiksemate osade kaupa, selle asemel et oodata kuude kaupa ühe suure "pauguga" valmivat asja. See keskendub paindlikkusele, meeskonnatööle ja pidevale õppimisele
+            </p>
+        </section>
 
-            <a href="https://agilemanifesto.org/iso/et/principles.html">Rohkem teavet saad siin</a>
+        <section id="alustalad">
+            <h2>4 alustala ja 12 printsiipi</h2>
+            <p><b>4 Alustala:</b></p>
+            <ul>
+                <li><b>Isikud ja suhtlus rohkem kui protsessid ja tööriistad</b> - Näide: Selle asemel, et saata pikk e-mail ja oodata vastust, minnakse kolleegi juurde ja lahendatakse probleem kohe vesteldes</li>
+                <li><b>Töötav tarkvara rohkem kui põhjalik dokumentatsioon</b> - Näide: Klient saab proovida toimivat prototüüpi, selle asemel et lugeda 50-leheküljelist kasutusjuhendit asja kohta, mida pole veel olemas</li>
+                <li><b>Koostöö kliendiga rohkem kui lepingulised läbirääkimised</b> - Näide: Klient kaasatakse igasse etappi, et ta saaks jooksvalt suunda muuta, mitte ei vaielda algse lepingu punktide üle</li>
+                <li><b>Reageerimine muutustele rohkem kui plaani järgimine</b> - Näide: Kui turul toimub muutus, muudetakse arendusplaani kohe, mitte ei ehitata valmis funktsiooni, mida keegi enam ei vaja</li>
+            </ul>
 
-    
-        </p>
+            <p><b>12 Printsiipi:</b></p>
+            <ol>
+                <li>Kõrgeim prioriteet on kliendi rahulolu (tarnides varakult väärtust)</li>
+                <li>Muutused on teretulnud isegi hilises arendusfaasis</li>
+                <li>Tarnitakse töötavat tarkvara tihti (nädala või paari tagant)</li>
+                <li>Äripoole esindajad ja arendajad peavad töötama koos iga päev</li>
+                <li>Ehita projektid motiveeritud isikute ümber</li>
+                <li>Kõige tõhusam suhtlusviis on näost-näkku vestlus</li>
+                <li>Töötav tarkvara on progressi peamine mõõdupuu</li>
+                <li>Agiilsed protsessid edendavad säästvat arendust (ühtlane tempo)</li>
+                <li>Pidev tähelepanu tehnilisele tipptasemele</li>
+                <li>Lihtsus – tegemata töö maksimeerimise kunst – on oluline</li>
+                <li>Parimad lahendused tulevad iseorganiseeruvatest meeskondadest</li>
+                <li>Regulaarne eneseanalüüs ja tööviiside kohandamine</li>
+            </ol>
+        </section>
 
+        <section id="kasutus">
+            <h2>Kuna kasutada ja kuna mitte?</h2>
+            <table>
+                <tr>
+                    <th>Saab/Sobilik</th>
+                    <th>Ei saa/Ei sobi</th>
+                </tr>
+                <tr>
+                    <td>Projektid, kus nõuded pole alguses 100% selged</td>
+                    <td>Fikseeritud eelarve ja jäiga ulatusega hanked</td>
+                </tr>
+                <tr>
+                    <td>Innovaatilised tooted ja startupid</td>
+                    <td>Kriitilised süsteemid (nt lennujuhtimistarkvara), kus vigu ei tohi olla</td>
+                </tr>
+                <tr>
+                    <td>Kui klient saab olla aktiivselt kaasatud</td>
+                    <td>Kui organisatsioon on väga hierarhiline ja muutuste vastane</td>
+                </tr>
+            </table>
+        </section>
 
-        <table>
-            <tr>
-                <th>Saab</th>
-                <th>Ei saa</th>
-            </tr>
-            <tr>
-                <td>Muutuva nõutega projektiga</td>
-                <td>Stabiilsed ja fikseeritud projektiga</td>
-            </tr>
-            <tr>
-                <td>Kiiret reageerimist vajav projektiga</td>
-                <td>Karmidega regulatsiooni projektiga</td>
-            </tr>
-            <tr>
-                <td>Keerulistes ja uutes valdkonnas</td>
-                <td>Suure eelarve riskiga avaliku sektori projektiga</td>
-            </tr>
-            <tr>
-                <td>Kui klient/tellija on kaasatud</td>
-                <td>Kui puudub tellija/klient</td>
-            </tr>
-            <tr>
-                <td>Meeskonnades kus rollid on paindlikud</td>
-                <td>Meeskond pole kooskõlas omavahel
-                </td>
-            </tr>
-        </table>
+        <section id="scrum">
+            <h2>SCRUM arendusmetoodika</h2>
+            <p>SCRUM on raamistik, mis aitab meeskondadel keeruliste probleemidega toime tulla. See on kõige populaarsem agiilne meetod, sest see annab selge struktuuri ja rollid, mis tagavad läbipaistvuse ja kiirete tulemuste saavutamise</p>
 
-        <img src="Piltid/photo1.png">
+            <h3>Rollid</h3>
+            <ul>
+                <li><b>Product Owner (Tooteomanik):</b> Määrab, mida on vaja teha ja prioritiseerib tööd</li>
+                <li><b>Scrum Master:</b> Aitab meeskonnal Scrumi järgida ja eemaldab takistused</li>
+                <li><b>Development Team (Arendusmeeskond):</b> Inimesed, kes reaalselt toote valmis ehitavad</li>
+            </ul>
 
-        <h3>SCRUM arendusmeetod</h3>
-        <p>
-             <b> Arendustsükkel: </b> 
-        <li>
-            <p>Plaani</p>
-        </li>
-        <li>
-             <p>Disaini</p>
-        </li>
-        <li>
-            <p>Arenda</p>
-        </li>
-           <li>
-            <p>Testi</p>
-           </li>
-           <li>
-            <p>Võta kasutusele</p>
-           </li>
-           <li>
-                <p>Hinda</p>
-           </li>
-           <li>
-            <p>Avalda</p>
-            </li>
-            
-            
-       
-        
-    
-        </p>
-        <img src="Piltid/scrum.jpg">
+            <h3>Koosolekud (Sündmused)</h3>
+            <ul>
+                <li><b>Sprint Planning:</b> Valitakse tööd, mida järgmise sprindi jooksul teha jõutakse</li>
+                <li><b>Daily Scrum:</b> Igapäevane 15-minutiline koosolek sünkroonimiseks</li>
+                <li><b>Sprint Review:</b> Tehtud töö demonstreerimine kliendile</li>
+                <li><b>Sprint Retrospective:</b> Meeskond arutab, kuidas protsessi paremaks muuta</li>
+            </ul>
 
+            <h3>Daily Standup - 3 küsimust</h3>
+            <ol>
+                <li>Mida ma tegin eile, et aidata meeskonnal eesmärki täita?</li>
+                <li>Mida ma teen täna, et aidata meeskonnal eesmärki täita?</li>
+                <li>Kas mul on mingeid takistusi, mis minu tööd segavad?</li>
+            </ol>
 
+            <h3>Artefaktid</h3>
+            <ul>
+                <li><b>Product Backlog:</b> Nimekiri kõigist soovidest ja vajadustest toote jaoks</li>
+                <li><b>Sprint Backlog:</b> Valitud ülesanded ühe konkreetse sprindi jaoks</li>
+                <li><b>Increment (Lisand):</b> Töö tulemus, mis on "Valmis" ja kasutatav</li>
+            </ul>
+        </section>
 
-       
-
-      
-
-  
-
+        <section id="viited">
+            <h2>Viited</h2>
+            <ul>
+                <li><a href="https://agilemanifesto.org/iso/et/principles.html">Agiilne manifesto ja printsiibid</a></li>
+                <li><a href="https://scrumguides.org/scrum-guide.html">Ametlik Scrum Guide (Lisaallikas)</a></li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>
